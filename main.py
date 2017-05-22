@@ -6,7 +6,7 @@ from operations import send_fcm_message
 
 context = zmq.Context()
 socket = context.socket(zmq.PULL)
-socket.bind("tcp://127.0.0.1:5555")
+socket.bind("tcp://127.0.0.1:5678")
 
 handlers = {
     'send_fcm_message': send_fcm_message
